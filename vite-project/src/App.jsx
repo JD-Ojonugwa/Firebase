@@ -1,4 +1,7 @@
-import Card from "./component/layout/Card"
+import Header from "./component/layout/Header";
+import Login from "./component/pages/Login";
+import Profile from "./component/pages/Profile";
+import SignUp from "./component/pages/SignUp";
 
 
 function App() {
@@ -6,8 +9,11 @@ function App() {
 
   return (
     <>
-       <div className="flex justify-center mt-10">
-        <Card />
+      <Header />
+      <div className="flex justify-center mt-10">
+        <SignUp />
+        <Login />
+        
       </div>
     </>
   );
