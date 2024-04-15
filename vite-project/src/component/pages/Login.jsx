@@ -79,7 +79,7 @@ function Login() {
             </div>
 
             <div className="mt-3 text-center">
-              No account yet? click
+              No account yet? 
               <span className="text-[#AA4A44]">
                 <Link to="/Sign-up"> Sign up </Link>
               </span>
