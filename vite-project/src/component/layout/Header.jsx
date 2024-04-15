@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate()
@@ -9,6 +9,11 @@ function Header() {
   if(location.pathname === "/sign-up") {
     btnText = "Login"
     targetRoute = "/"
+
+  } else if(location.pathname === "/profile") {
+    btnText = "Log Out"
+    targetRoute = "/"
+
   } else {
     btnText = "Sign up"
     targetRoute = "/sign-up"
@@ -43,7 +48,7 @@ function Header() {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
+              {/* <li>
                 <a>Item 1</a>
               </li>
               <li>
@@ -59,10 +64,10 @@ function Header() {
               </li>
               <li>
                 <a>Item 3</a>
-              </li>
+              </li> */}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Firebase Auth</a>
+          <a className="btn btn-ghost text-xl"><Link to="/"> Firebase Auth</Link></a>
         </div>
         {/* <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
