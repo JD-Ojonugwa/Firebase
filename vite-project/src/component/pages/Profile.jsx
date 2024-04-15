@@ -1,5 +1,5 @@
 
-function Profile(user) {
+function Profile({user}) {
   return (
     <>
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -8,7 +8,7 @@ function Profile(user) {
         <div className="card-body">
           <p>You're logged in</p>
           <div className="card-actions">
-            <button className="btn btn-primary">Log Out</button>
+            <button className="btn btn-outline btn-black">Log Out</button>
           </div>
         </div>
       </div>
