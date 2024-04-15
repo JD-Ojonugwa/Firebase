@@ -94,7 +94,7 @@ function SignUp() {
               />
             </label>
             <div>
-              <span className="text-error">{"" !== msg && msg}</span>
+              <span className="text-error">{ "" !== msg && msg}</span>
             </div>
             <div className="card-actions justify-center">
               <button
