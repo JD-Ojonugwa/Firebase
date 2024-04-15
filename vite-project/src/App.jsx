@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route index element={<Login />} />
           <Route path="/sign-up" element={<SignUp />} />
